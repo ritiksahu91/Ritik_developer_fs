@@ -1,0 +1,232 @@
+/* Desktop Navigation Styles */
+.navbar-profile-pic {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar-profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--theme-accent);
+  object-fit: cover;
+  border: 3px solid gold;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.navbar-profile-pic img:hover {
+  transform: scale(1.1) rotateX(6deg) rotateY(-6deg);
+  border-color: #1e1e2c;
+}
+
+.nav-items {
+  margin-top: 30px;
+}
+
+.nav-item {
+  margin: 20px 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: gold;
+  transform: translateX(5px) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25), 0 0 18px rgba(255,215,0,0.25);
+}
+
+.nav-link svg {
+  font-size: 20px;
+  color: var(--theme-accent);
+}
+
+/* Collapsed Sidebar Styles */
+.sidebar-small {
+  margin-top: 20px;
+}
+
+.sidebar-small .nav-link {
+  justify-content: center;
+  padding: 15px 10px;
+  margin: 10px 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.sidebar-small .nav-link:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  transform: scale(1.1) rotateX(4deg) rotateY(-4deg);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25), 0 0 18px rgba(255,215,0,0.25);
+}
+
+.sidebar-small .nav-link svg {
+  font-size: 18px;
+}
+
+/* Enhanced Collapsed Navigation */
+.collapsed-nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.collapsed-nav-link:hover {
+  background-color: color-mix(in srgb, var(--theme-accent), transparent 70%) !important;
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.collapsed-nav-link:hover svg {
+  color: #1e1e2c;
+}
+
+/* Tooltip for collapsed navigation */
+.collapsed-nav-link::after {
+  content: attr(title);
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(30, 30, 44, 0.95);
+  color: var(--theme-accent);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: 1px solid var(--theme-accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.collapsed-nav-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+  left: 55px;
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav-items {
+  padding: 20px 0;
+}
+
+.mobile-nav-item {
+  margin: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--theme-accent), transparent 90%);
+}
+
+.mobile-nav-item:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 25px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mobile-nav-link:hover {
+  background-color: color-mix(in srgb, var(--theme-accent), transparent 85%);
+  color: gold;
+  transform: translateX(10px);
+}
+
+.mobile-nav-icon {
+  color: var(--theme-accent);
+  font-size: 20px;
+  min-width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-text {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-profile-pic {
+    display: none;
+  }
+  
+  .nav-items {
+    display: none;
+  }
+  
+  .sidebar-small {
+    display: none;
+  }
+  
+  .mobile-nav-link {
+    padding: 15px 20px;
+  }
+  
+  .mobile-nav-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile-nav-link {
+    padding: 12px 18px;
+  }
+  
+  .mobile-nav-text {
+    font-size: 14px;
+  }
+  
+  .mobile-nav-icon {
+    font-size: 18px;
+    min-width: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-nav-link {
+    padding: 10px 15px;
+  }
+  
+  .mobile-nav-text {
+    font-size: 13px;
+  }
+  
+  .mobile-nav-icon {
+    font-size: 16px;
+    min-width: 20px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-nav-link {
+    padding: 12px 20px;
+  }
+  
+  .mobile-nav-text {
+    font-size: 14px;
+  }
+}

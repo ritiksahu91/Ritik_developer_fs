@@ -1,0 +1,125 @@
+.about {
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  box-shadow: color-mix(in srgb, var(--theme-accent), transparent 25%) 0px 19px 38px,
+    color-mix(in srgb, var(--theme-accent), transparent 70%) 0px 15px 12px;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #060612;
+  transition: all 0.3s ease;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.about-content h1 {
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--theme-accent);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.about-content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  text-align: justify;
+  padding: 15px;
+  background-image: radial-gradient(circle, #8a8888 1%, var(--theme-accent) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .about {
+    margin: 20px auto;
+    padding: 15px;
+    width: 95%;
+  }
+  
+  .about-content h1 {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+  }
+  
+  .about-content p {
+    padding: 12px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    margin: 15px auto;
+    padding: 10px;
+    width: 98%;
+  }
+  
+  .about-content h1 {
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+  }
+  
+  .about-content p {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet responsive styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about {
+    width: 85%;
+    padding: 25px;
+  }
+}
+
+/* Large screen enhancements */
+@media (min-width: 1025px) {
+  .about {
+    width: 80%;
+    padding: 30px;
+  }
+  
+  .about-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .about-content p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .about {
+    margin: 15px auto;
+    padding: 15px;
+  }
+  
+  .about-content h1 {
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    padding: 10px;
+  }
+}

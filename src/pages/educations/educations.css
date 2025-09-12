@@ -1,0 +1,239 @@
+.educations {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  background: #060612;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: color-mix(in srgb, var(--theme-accent), transparent 25%) 0px 19px 38px,
+    color-mix(in srgb, var(--theme-accent), transparent 70%) 0px 15px 12px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.educations h2 {
+  font-weight: bold;
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  border-bottom: 2px solid var(--theme-accent);
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.educations hr { display: none; }
+
+.vertical-timeline-element-title {
+  color: #e6e6e6;
+  font-weight: 800;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-bottom: 10px;
+}
+
+.vertical-timeline-element-subtitle {
+  color: #d9d9d9;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 10px;
+}
+
+.vertical-timeline-element-content p {
+  color: #c7c7c7;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.vertical-timeline-element-date {
+  color: #c7c7c7;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Timeline responsive styles */
+.vertical-timeline {
+  padding: 20px 0;
+  perspective: 1000px;
+}
+
+.vertical-timeline-element {
+  margin-bottom: 30px;
+}
+
+.vertical-timeline-element-content {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid color-mix(in srgb, var(--theme-accent), transparent 70%);
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-3px) rotateX(2deg) rotateY(-2deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 0 24px color-mix(in srgb, var(--theme-accent), transparent 72%);
+}
+
+.vertical-timeline-element-icon {
+  transition: all 0.3s ease;
+}
+
+.vertical-timeline-element:hover .vertical-timeline-element-icon {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 3px rgba(30,30,44,0.7), 0 0 18px color-mix(in srgb, var(--theme-accent), transparent 30%), 0 0 40px color-mix(in srgb, var(--theme-accent), transparent 60%);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .educations {
+    margin: 40px auto;
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .educations h2 {
+    margin-bottom: 15px;
+  }
+  
+  .educations hr {
+    width: 250px;
+    margin: 10px auto 20px auto;
+  }
+  
+  .vertical-timeline {
+    padding: 15px 0;
+  }
+  
+  .vertical-timeline-element {
+    margin-bottom: 25px;
+  }
+  
+  .vertical-timeline-element-content {
+    padding: 15px;
+  }
+  
+  .vertical-timeline-element-title {
+    margin-bottom: 8px;
+  }
+  
+  .vertical-timeline-element-subtitle {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .educations {
+    margin: 30px auto;
+    width: 98%;
+    padding: 10px;
+  }
+  
+  .educations h2 {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+  }
+  
+  .educations hr {
+    width: 200px;
+    margin: 8px auto 15px auto;
+  }
+  
+  .vertical-timeline {
+    padding: 10px 0;
+  }
+  
+  .vertical-timeline-element {
+    margin-bottom: 20px;
+  }
+  
+  .vertical-timeline-element-content {
+    padding: 12px;
+  }
+  
+  .vertical-timeline-element-title {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+  }
+  
+  .vertical-timeline-element-subtitle {
+    margin-bottom: 6px;
+    font-size: 1rem;
+  }
+  
+  .vertical-timeline-element-content p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablet responsive styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .educations {
+    width: 85%;
+    padding: 25px;
+  }
+  
+  .vertical-timeline-element-content {
+    padding: 18px;
+  }
+}
+
+/* Large screen enhancements */
+@media (min-width: 1025px) {
+  .educations {
+    width: 80%;
+    padding: 30px;
+  }
+  
+  .vertical-timeline-element-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+  
+  .vertical-timeline-element:hover .vertical-timeline-element-icon {
+    transform: scale(1.15);
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .educations {
+    margin: 25px auto;
+  }
+  
+  .vertical-timeline {
+    padding: 12px 0;
+  }
+  
+  .vertical-timeline-element {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .educations {
+    width: 99%;
+    padding: 8px;
+  }
+  
+  .vertical-timeline-element-content {
+    padding: 10px;
+  }
+  
+  .vertical-timeline-element-title {
+    font-size: 1rem;
+  }
+  
+  .vertical-timeline-element-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .vertical-timeline-element-content p {
+    font-size: 0.85rem;
+  }
+}
