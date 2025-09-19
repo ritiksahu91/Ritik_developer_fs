@@ -27,7 +27,10 @@ export const Educations = () => {
             <h3 className="vertical-timeline-element-title">BTECH-CSE</h3>
             <h4 className="vertical-timeline-element-subtitle">LNCTE BHOPAL</h4>
             <p>
-              Frontend developer,problem solver,ui designer,mern stack developer
+              GOT 8.3 CGPA in UG
+            </p>
+              <p>
+              DSA enthusiast ,Full stack developer ,data analyst and data scientist.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
