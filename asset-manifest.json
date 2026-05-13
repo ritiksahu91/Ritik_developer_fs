@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Ritik_developer_fs/static/css/main.7064639d.css",
-    "main.js": "/Ritik_developer_fs/static/js/main.158cfb49.js",
-    "static/js/453.419a5d54.chunk.js": "/Ritik_developer_fs/static/js/453.419a5d54.chunk.js",
-    "static/media/Qrcode.png": "/Ritik_developer_fs/static/media/Qrcode.08e153361d08d1028f37.png",
-    "static/media/Ritik__Sahu__Resume.pdf": "/Ritik_developer_fs/static/media/Ritik__Sahu__Resume.485324f7d7386024cb3a.pdf",
-    "static/media/photo.jpeg": "/Ritik_developer_fs/static/media/photo.586830def98ee0f9e9ba.jpeg",
-    "static/media/profile.pdf": "/Ritik_developer_fs/static/media/profile.6dc8fbe53fb29a7a85bc.pdf",
+    "main.css": "/Ritik_developer_fs/static/css/main.f881af51.css",
+    "main.js": "/Ritik_developer_fs/static/js/main.c16ce358.js",
+    "static/media/Anti_spoofing.mp4": "/Ritik_developer_fs/static/media/Anti_spoofing.d4bada51f7366316bab6.mp4",
+    "static/media/personality.mp4": "/Ritik_developer_fs/static/media/personality.32f9862e0fe9a0868813.mp4",
+    "static/media/egirdawari.mp4": "/Ritik_developer_fs/static/media/egirdawari.4148b3a486fa7580b7b3.mp4",
+    "static/media/plant_disease.mp4": "/Ritik_developer_fs/static/media/plant_disease.602cc0362b6ba187b17d.mp4",
+    "static/media/site_Suitability.mp4": "/Ritik_developer_fs/static/media/site_Suitability.0c621ec68f9db330fbb1.mp4",
+    "static/media/photo.png": "/Ritik_developer_fs/static/media/photo.30804877b591ec953107.png",
+    "static/media/SiteSuitability.png": "/Ritik_developer_fs/static/media/SiteSuitability.a4ed98c6633de029f9ae.png",
+    "static/media/Personalit_photo.jpeg": "/Ritik_developer_fs/static/media/Personalit_photo.b62a5e2fe49291564832.jpeg",
+    "static/media/egirdawari.png": "/Ritik_developer_fs/static/media/egirdawari.0248abc128e2fb819454.png",
     "static/media/plandiseas.jpeg": "/Ritik_developer_fs/static/media/plandiseas.cf6e9ed64bb1c622c969.jpeg",
-    "static/media/eccomerce.jpeg": "/Ritik_developer_fs/static/media/eccomerce.7ab4f8355e6b087abe56.jpeg",
-    "static/media/snake.jpeg": "/Ritik_developer_fs/static/media/snake.741e3aa778317836c158.jpeg",
     "index.html": "/Ritik_developer_fs/index.html",
-    "main.7064639d.css.map": "/Ritik_developer_fs/static/css/main.7064639d.css.map",
-    "main.158cfb49.js.map": "/Ritik_developer_fs/static/js/main.158cfb49.js.map",
-    "453.419a5d54.chunk.js.map": "/Ritik_developer_fs/static/js/453.419a5d54.chunk.js.map"
+    "main.f881af51.css.map": "/Ritik_developer_fs/static/css/main.f881af51.css.map",
+    "main.c16ce358.js.map": "/Ritik_developer_fs/static/js/main.c16ce358.js.map"
   },
   "entrypoints": [
-    "static/css/main.7064639d.css",
-    "static/js/main.158cfb49.js"
+    "static/css/main.f881af51.css",
+    "static/js/main.c16ce358.js"
   ]
 }
